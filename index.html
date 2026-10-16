@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>坦克大战 · Tank Battle</title>
+<style>
+  body{background:#0a0a12;color:#ccc;font-family:system-ui,sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;margin:0}
+  a{color:#f4c91c;margin:0 10px}
+  p{margin:6px 0}
+</style>
+</head>
+<body>
+<div style="text-align:center">
+  <p style="color:#f4c91c;font-size:22px;letter-spacing:3px">坦 克 大 战</p>
+  <p id="tip">正在进入游戏…</p>
+  <p style="font-size:13px;color:#888">
+    手机版: <a href="mobile.html">mobile.html</a> ｜
+    电脑版: <a href="desktop.html">desktop.html</a>
+  </p>
+</div>
+<script>
+  var touch = ('ontouchstart' in window) || navigator.maxTouchPoints > 0;
+  location.replace(touch ? 'mobile.html' : 'desktop.html');
+</script>
+</body>
+</html>
